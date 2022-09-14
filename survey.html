@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <h1 id="title">Udacity Curriculumn Survey Form</h1>
+    <p id="description">Please take some time to fill out this survey form so that the institution can serve you better!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name:<input id="name" type="text" placeholder="Please enter your name" required /></label>
+        <label id="email-label" for="email">Email:<input id="email" type="email" placeholder="Please enter your email address" required /></label>
+        <label id="number-label" for="age">Age (years):<input id="number" type="number" min="10" max="80" placeholder="Please specify your age" required /></label>
+        </fieldset>
+        <fieldset>
+          <label for="drop-down"> What is your current role at Udacity?
+        <select id="dropdown">
+          <option value="">(select one)<option>
+          <option value="1">Student</option>
+          <option value="2">Tutor</option>
+          <option value="3">Senior Engineer</option>
+
+        </select>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label>Did Udacity fulfill all your learning goals?<label>
+          <label for="yes">Yes<input id="yes" type="radio" value="yes" class="inline" name="goal" /></label>
+          <label for="no">No<input id="no" type="radio" value="no" name="goal" class="inline" /></label>
+          <label for="maybe">Maybe<input id="maybe" type="radio" value="maybe" name="goal" class="inline" /></label>
+        </fieldset>
+        
+          <label>In what areas would you like to see improvement?<label>
+            <input value="checked" id="teach" type="checkbox" required name="" class="inline" /> Teaching
+            <input value="checked" id="video" type="checkbox" required name="" class="inline" /> Videos
+            <input value="checked" id="content" type="checkbox" required name="" class="inline" /> Content
+            <label for="comment">Any additional comments?
+              <textarea id="comments" name="comments" cols="30" rows="3" placeholder="Express any additional comments you migh be having..." ></textarea>
+            </label>
+
+        </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+        
+    </form>
+    
+  </body>
+
+</html>
